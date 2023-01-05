@@ -12,7 +12,7 @@ class isGraphBipartite {
     }
     public boolean validColor(int[][] graph, int[] colorArray, int color, int nodeCount){
         // If node has already been visited, return true if color of the neighbouring node (that is, node calling the function) and this node are different else return false. Color conflict indicates violation of bipartite graph property
-        if(nodeArray[nodeCount] != 0)
+        if(colorArray[nodeCount] != 0)
             return colorArray[nodeCount] == color;
         // Color an uncolored node
         colorArray[nodeCount] = color;
