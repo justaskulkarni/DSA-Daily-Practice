@@ -9,6 +9,11 @@ public class TopKFrequentElementsBruteForce {
         // Make a frequency map
         Map<Integer, Integer> map = new HashMap<>();
         // Fill the map with given elements and update frequency for each insertion
+        /*
+        The java.util.HashMap.put() method of HashMap is used to insert a mapping into a map. This means we
+        can insert a specific key and the value it is mapping to into a particular map. If an existing key
+        is passed then the previous value gets replaced by the new value. If a new pair is passed, then the pair gets inserted as a whole.
+         */
         for(int i: nums)
             map.put(i, map.getOrDefault(i, 0) + 1);
 
